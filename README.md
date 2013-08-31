@@ -47,10 +47,13 @@ A handy way to create an `NSOperationQueue` and submit `SSBlockOperationBlock`s 
 NSOperationQueue *serialQueue = [NSOperationQueue serialOperationQueue];
 
 // An operation queue that runs up to 3 operations concurrently.
-NSOperationQeuue *threeOperationQueue = [NSOperationQueue operationQueueWithConcurrentOperations:3];
+NSOperationQueue *threeOperationQueue = [NSOperationQueue operationQueueWithConcurrentOperations:3];
 
 // An operation queue that runs as many concurrent operations as the system deems appropriate.
 NSOperationQueue *concurrentQueue = [NSOperationQueue concurrentMaxOperationQueue];
+
+// Submit an `SSBlockOperationBlock` for processing.
+[anOperationQueue addSSBlockOperationWithBlock:anOperationBlock];
 ```
 
 ## Thanks!
