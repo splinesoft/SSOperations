@@ -1,7 +1,7 @@
 SSOperations
 =============
 
-[![Build Status](https://travis-ci.org/splinesoft/SSOperations.png?branch=master)](https://travis-ci.org/splinesoft/SSOperations)
+![](http://cocoapod-badges.herokuapp.com/v/SSOperations/badge.png) &nbsp; ![](http://cocoapod-badges.herokuapp.com/p/SSOperations/badge.png) &nbsp; [![Build Status](https://travis-ci.org/splinesoft/SSOperations.png?branch=master)](https://travis-ci.org/splinesoft/SSOperations)
 
 Handy `NSOperationQueue` and `NSBlockOperation` helpers.
 
@@ -12,7 +12,7 @@ Handy `NSOperationQueue` and `NSBlockOperation` helpers.
 Install with [Cocoapods](http://cocoapods.org). Add to your podfile:
 
 ```
-pod 'SSOperations', :git => 'https://github.com/splinesoft/SSOperations.git"
+pod 'SSOperations', :head # YOLO
 ```
 
 ## SSBlockOperation & SSBlockOperationBlock
