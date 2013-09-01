@@ -23,17 +23,17 @@
  
     self.view.backgroundColor = [UIColor whiteColor];
     
-    serialQueue = [NSOperationQueue serialOperationQueue];
-    concurrentQueue = [NSOperationQueue concurrentMaxOperationQueue];
+    serialQueue = [NSOperationQueue SSSerialOperationQueue];
+    concurrentQueue = [NSOperationQueue SSConcurrentMaxOperationQueue];
 	
     // Run some operations!
     for( NSUInteger i = 0; i < 10; i++ ) {
-        [serialQueue addSSBlockOperationWithBlock:^(SSBlockOperation *operation) {
+        [serialQueue SSAddBlockOperationWithBlock:^(SSBlockOperation *operation) {
             for( NSUInteger j = 0; j < 100; j++ )
                 NSLog(@"Serial #%i: %i", i, j);
         }];
         
-        [concurrentQueue addSSBlockOperationWithBlock:^(SSBlockOperation *operation) {
+        [concurrentQueue SSAddBlockOperationWithBlock:^(SSBlockOperation *operation) {
             for( NSUInteger j = 0; j < 100; j++ )
                 NSLog(@"Concurrent #%i: %i", i, j);
         }];
