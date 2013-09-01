@@ -16,24 +16,24 @@
 /**
  * Construct an NSOperationQueue that runs serially with a maximum of one concurrent operation.
  */
-+ (instancetype) SSSerialOperationQueue;
++ (instancetype) ss_serialOperationQueue;
 
 /**
  * Construct an NSOperationQueue that runs with the system-provided maximum number of
  * concurrent operations.
  */
-+ (instancetype) SSConcurrentMaxOperationQueue;
++ (instancetype) ss_concurrentMaxOperationQueue;
 
 /**
  * Construct an NSOperationQueue with the specified number of concurrent operations.
  */
-+ (instancetype) SSConcurrentQueueWithConcurrentOperations:(NSUInteger)operationCount;
++ (instancetype) ss_concurrentQueueWithConcurrentOperations:(NSUInteger)operationCount;
 
 #pragma mark - Operations
 
 /**
  * Enqueue an `SSBlockOperation` with the specified operation block.
  */
-- (void) SSAddBlockOperationWithBlock:(SSBlockOperationBlock)block;
+- (void) ss_addBlockOperationWithBlock:(SSBlockOperationBlock)block;
 
 @end

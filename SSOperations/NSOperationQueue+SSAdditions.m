@@ -10,22 +10,22 @@
 
 @implementation NSOperationQueue (SSAdditions)
 
-+ (instancetype) SSSerialOperationQueue {
-    return [self SSConcurrentQueueWithConcurrentOperations:1];
++ (instancetype) ss_serialOperationQueue {
+    return [self ss_concurrentQueueWithConcurrentOperations:1];
 }
 
-+ (instancetype) SSConcurrentMaxOperationQueue {
-    return [self SSConcurrentQueueWithConcurrentOperations:NSOperationQueueDefaultMaxConcurrentOperationCount];
++ (instancetype) ss_concurrentMaxOperationQueue {
+    return [self ss_concurrentQueueWithConcurrentOperations:NSOperationQueueDefaultMaxConcurrentOperationCount];
 }
 
-+ (instancetype) SSConcurrentQueueWithConcurrentOperations:(NSUInteger)operationCount {
++ (instancetype) ss_concurrentQueueWithConcurrentOperations:(NSUInteger)operationCount {
     NSOperationQueue *queue = [NSOperationQueue new];
     [queue setMaxConcurrentOperationCount:operationCount];
     
     return queue;
 }
 
-- (void) SSAddBlockOperationWithBlock:(SSBlockOperationBlock)block {
+- (void) ss_addBlockOperationWithBlock:(SSBlockOperationBlock)block {
     [self addOperation:[SSBlockOperation operationWithBlock:block]];
 }
 
