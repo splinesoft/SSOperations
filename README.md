@@ -35,7 +35,7 @@ SSBlockOperationBlock anOperationBlock = ^(SSBlockOperation *operation) {
 };
 
 // Submit this operation to a queue for execution.
-[myOperationQueue SSAddBlockOperationWithBlock:anOperationBlock];
+[myOperationQueue ss_addBlockOperationWithBlock:anOperationBlock];
 ```
 
 ## NSOperationQueue+SSAdditions.h
@@ -44,16 +44,16 @@ A handy way to create an `NSOperationQueue` and submit `SSBlockOperationBlock`s 
 
 ```objc
 // An operation queue that runs operations serially.
-NSOperationQueue *serialQueue = [NSOperationQueue SSSerialOperationQueue];
+NSOperationQueue *serialQueue = [NSOperationQueue ss_serialOperationQueue];
 
 // An operation queue that runs up to 3 operations concurrently.
-NSOperationQueue *threeOperationQueue = [NSOperationQueue SSConcurrentQueueWithConcurrentOperations:3];
+NSOperationQueue *threeOperationQueue = [NSOperationQueue ss_concurrentQueueWithConcurrentOperations:3];
 
 // An operation queue that runs as many concurrent operations as the system deems appropriate.
-NSOperationQueue *concurrentQueue = [NSOperationQueue SSConcurrentMaxOperationQueue];
+NSOperationQueue *concurrentQueue = [NSOperationQueue ss_concurrentMaxOperationQueue];
 
 // Submit an `SSBlockOperationBlock` for processing.
-[anOperationQueue SSAddBlockOperationWithBlock:anOperationBlock];
+[anOperationQueue ss_addBlockOperationWithBlock:anOperationBlock];
 ```
 
 ## Thanks!
