@@ -17,17 +17,20 @@
  * Construct an NSOperationQueue that runs serially with a maximum of one concurrent operation.
  */
 + (instancetype) ss_serialOperationQueue;
++ (instancetype) ss_serialOperationQueueNamed:(NSString *)name;
 
 /**
  * Construct an NSOperationQueue that runs with the system-provided maximum number of
  * concurrent operations.
  */
 + (instancetype) ss_concurrentMaxOperationQueue;
++ (instancetype) ss_concurrentMaxOperationQueueNamed:(NSString *)name;
 
 /**
  * Construct an NSOperationQueue with the specified number of concurrent operations.
  */
 + (instancetype) ss_concurrentQueueWithConcurrentOperations:(NSUInteger)operationCount;
++ (instancetype) ss_concurrentQueueWithConcurrentOperations:(NSUInteger)operationCount named:(NSString *)name;
 
 #pragma mark - Operations
 

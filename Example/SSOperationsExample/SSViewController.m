@@ -25,6 +25,10 @@
     
     serialQueue = [NSOperationQueue ss_serialOperationQueue];
     concurrentQueue = [NSOperationQueue ss_concurrentMaxOperationQueue];
+    
+    NSLog(@"On this day were born two beautiful queues:\n%@\n%@",
+          [serialQueue name],
+          [concurrentQueue name]);
 	
     // Run some operations!
     for( NSUInteger i = 0; i < 10; i++ ) {
