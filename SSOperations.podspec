@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SSOperations"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Handy NSOperationQueue and NSBlockOperation helpers."
   s.homepage     = "https://github.com/splinesoft/SSOperations"
   s.license      = { :type => 'MIT', :file => 'LICENSE'  }
