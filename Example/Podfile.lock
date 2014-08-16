@@ -1,0 +1,14 @@
+PODS:
+  - SSOperations (0.0.2)
+
+DEPENDENCIES:
+  - SSOperations (from `../`)
+
+EXTERNAL SOURCES:
+  SSOperations:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SSOperations: ef3b53f182335fa8bebaed725d24b2b908f2f5a9
+
+COCOAPODS: 0.33.1
