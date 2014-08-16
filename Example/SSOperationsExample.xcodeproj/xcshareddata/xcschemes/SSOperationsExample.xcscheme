@@ -28,6 +28,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5EB198AF199EE2AB00CCF6EA"
+               BuildableName = "SSOperationsTests.xctest"
+               BlueprintName = "SSOperationsTests"
+               ReferencedContainer = "container:SSOperationsExample.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

@@ -3,3 +3,7 @@ platform :ios, '6.0'
 xcodeproj 'SSOperationsExample'
 
 pod 'SSOperations', :path => "../"
+
+target :SSOperationsTests, :exclusive => true do
+    pod 'MXGSynchronizeTest'
+end
