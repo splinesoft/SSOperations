@@ -9,7 +9,7 @@ Handy `NSOperationQueue` and `NSBlockOperation` helpers.
 
 ## Install
 
-Install with [Cocoapods](http://cocoapods.org). Add to your podfile:
+Install with [CocoaPods](http://cocoapods.org). Add to your `Podfile`:
 
 ```
 pod 'SSOperations', :head # YOLO
