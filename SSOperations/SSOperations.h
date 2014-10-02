@@ -6,10 +6,7 @@
 //  Copyright (c) 2013 Splinesoft. All rights reserved.
 //
 
-#ifndef SSOperationsExample_SSOperations_h
-#define SSOperationsExample_SSOperations_h
+#pragma once
 
 #import "SSBlockOperation.h"
 #import "NSOperationQueue+SSAdditions.h"
-
-#endif
