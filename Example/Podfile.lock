@@ -1,5 +1,5 @@
 PODS:
-  - MXGSynchronizeTest (1.0.0)
+  - MXGSynchronizeTest (1.1.0)
   - SSOperations (0.0.2)
 
 DEPENDENCIES:
@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  MXGSynchronizeTest: 39c43d814b30ad40866d53587e930821560f0e5b
+  MXGSynchronizeTest: 8f2f041ca6896caec74463ab43743d97d3dc8c18
   SSOperations: ef3b53f182335fa8bebaed725d24b2b908f2f5a9
 
-COCOAPODS: 0.33.1
+COCOAPODS: 0.34.1
