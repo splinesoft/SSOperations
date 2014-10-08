@@ -5,7 +5,7 @@ set -e
 export LC_CTYPE=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-xctool \
+xcodebuild \
 -workspace Example/SSOperationsExample.xcworkspace \
 -scheme SSOperationsExample \
 -sdk iphonesimulator \
@@ -13,4 +13,4 @@ xctool \
 clean test \
 ONLY_ACTIVE_ARCH=NO \
 RUN_CLANG_STATIC_ANALYZER=YES \
-CLANG_STATIC_ANALYZER_MODE=deep
+CLANG_STATIC_ANALYZER_MODE=deep | xcpretty -c

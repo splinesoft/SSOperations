@@ -1,3 +1,5 @@
+source 'https://github.com/cocoapods/specs.git'
+
 platform :ios, '6.0'
 
 xcodeproj 'SSOperationsExample'
