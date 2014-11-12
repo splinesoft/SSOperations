@@ -1,17 +1,17 @@
 PODS:
   - MXGSynchronizeTest (1.1.0)
-  - SSOperations (0.0.2)
+  - SSOperations (0.0.3)
 
 DEPENDENCIES:
   - MXGSynchronizeTest
-  - SSOperations (from `../`)
+  - SSOperations (from `../SSOperations.podspec`)
 
 EXTERNAL SOURCES:
   SSOperations:
-    :path: ../
+    :path: ../SSOperations.podspec
 
 SPEC CHECKSUMS:
   MXGSynchronizeTest: 8f2f041ca6896caec74463ab43743d97d3dc8c18
-  SSOperations: ef3b53f182335fa8bebaed725d24b2b908f2f5a9
+  SSOperations: 25c0f7301d3597e09ae4d462c2e5405500bef235
 
 COCOAPODS: 0.34.4
