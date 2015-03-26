@@ -9,7 +9,9 @@
 #import "SSOperations.h"
 
 @interface NSOperationQueue (SSNaming)
-+ (NSString *) defaultQueueName;
+
++ (NSString *) ss_defaultQueueName;
+
 @end
 
 @implementation NSOperationQueue (SSAdditions)
@@ -17,7 +19,7 @@
 #pragma mark - Constructors
 
 + (instancetype) ss_serialOperationQueue {
-    return [self ss_serialOperationQueueNamed:[self defaultQueueName]];
+    return [self ss_serialOperationQueueNamed:[self ss_defaultQueueName]];
 }
 
 + (instancetype)ss_serialOperationQueueNamed:(NSString *)name {
@@ -26,7 +28,7 @@
 }
 
 + (instancetype) ss_concurrentMaxOperationQueue {
-    return [self ss_concurrentMaxOperationQueueNamed:[self defaultQueueName]];
+    return [self ss_concurrentMaxOperationQueueNamed:[self ss_defaultQueueName]];
 }
 
 + (instancetype)ss_concurrentMaxOperationQueueNamed:(NSString *)name {
@@ -36,7 +38,7 @@
 
 + (instancetype) ss_concurrentQueueWithConcurrentOperations:(NSUInteger)operationCount {
     return [self ss_concurrentQueueWithConcurrentOperations:operationCount
-                                                      named:[self defaultQueueName]];
+                                                      named:[self ss_defaultQueueName]];
 }
 
 + (instancetype)ss_concurrentQueueWithConcurrentOperations:(NSUInteger)operationCount
@@ -56,10 +58,10 @@
 
 #pragma mark - naming
 
-+ (NSString *)defaultQueueName {
-    return [NSString stringWithFormat:@"%@-%f",
++ (NSString *) ss_defaultQueueName {
+    return [NSString stringWithFormat:@"%@-%@",
             NSStringFromClass(self),
-            [[NSDate date] timeIntervalSince1970]];
+            @([[NSDate date] timeIntervalSince1970])];
 }
 
 @end

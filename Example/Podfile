@@ -7,5 +7,5 @@ xcodeproj 'SSOperationsExample'
 pod 'SSOperations', :path => "../SSOperations.podspec"
 
 target :SSOperationsTests, :exclusive => true do
-    pod 'MXGSynchronizeTest'
+    pod 'SSOperations', :path => "../SSOperations.podspec"
 end

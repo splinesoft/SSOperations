@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Splinesoft. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 #import "SSBlockOperation.h"
 
 @interface NSOperationQueue (SSAdditions)

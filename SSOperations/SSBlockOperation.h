@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Splinesoft. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 /**
  * A block operation that is passed itself as an input when executed.

@@ -31,15 +31,15 @@
           [concurrentQueue name]);
 	
     // Run some operations!
-    for( NSUInteger i = 0; i < 10; i++ ) {
+    for (NSUInteger i = 0; i < 10; i++) {
         [serialQueue ss_addBlockOperationWithBlock:^(SSBlockOperation *operation) {
             for( NSUInteger j = 0; j < 100; j++ )
-                NSLog(@"Serial #%i: %i", i, j);
+                NSLog(@"Serial #%@: %@", @(i), @(j));
         }];
         
         [concurrentQueue ss_addBlockOperationWithBlock:^(SSBlockOperation *operation) {
             for( NSUInteger j = 0; j < 100; j++ )
-                NSLog(@"Concurrent #%i: %i", i, j);
+                NSLog(@"Concurrent #%@: %@", @(i), @(j));
         }];
     }
 }
