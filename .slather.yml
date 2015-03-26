@@ -1,0 +1,5 @@
+ci_service: circleci
+coverage_service: coveralls
+xcodeproj: Example/SSOperationsExample.xcodeproj
+source_directory: SSOperations
+ci_access_token: bxxVqw9yfwf5ZaEuflLEH4R0V80ZsYQaQ
