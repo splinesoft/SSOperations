@@ -1,7 +1,7 @@
 SSOperations
 =============
 
-[![Circle CI](https://circleci.com/gh/splinesoft/SSOperations.svg?style=svg&circle-token=d07be6d02465871a05a2d5ca5fa38cb5137c1838)](https://circleci.com/gh/splinesoft/SSOperations) [![Coverage Status](https://coveralls.io/repos/splinesoft/SSOperations/badge.svg)](https://coveralls.io/r/splinesoft/SSOperations)
+[![Circle CI](https://circleci.com/gh/splinesoft/SSOperations.svg?style=svg&circle-token=d07be6d02465871a05a2d5ca5fa38cb5137c1838)](https://circleci.com/gh/splinesoft/SSOperations) [![Coverage Status](http://codecov.io/github/splinesoft/SSOperations/coverage.svg?branch=master)](http://codecov.io/github/splinesoft/SSOperations?branch=master)
 
 Handy `NSOperationQueue` and `NSBlockOperation` helpers.
 
