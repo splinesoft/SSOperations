@@ -43,7 +43,7 @@
 
 + (instancetype)ss_concurrentQueueWithConcurrentOperations:(NSUInteger)operationCount
                                                      named:(NSString *)name {
-    NSOperationQueue *queue = [NSOperationQueue new];
+    NSOperationQueue *queue = [self new];
     [queue setMaxConcurrentOperationCount:operationCount];
     [queue setName:name];
     
